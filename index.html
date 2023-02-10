@@ -15,8 +15,7 @@
   <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
   <link rel="shortcut icon" href="/assets/icon.png">
   <link rel="stylesheet" href="home.css" />
-  <script src="home.js" defer></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
   <title>Meet, Avit Brian</title>
 </head>
 
@@ -33,7 +32,7 @@
       </div>
     </div>
     <div>
-      <ul class="primary-navigation flex">
+      <ul class="primary-navigation flex" id="nav">
         <li>
           <a class="fs-poppins text-black-3 bold-700" href="#section4">
             Stacks
@@ -51,6 +50,12 @@
       </ul>
     </div>
   </header>
+<a href="#nav">
+    <div id="top">
+      <img src="/image/10001.svg" alt="" style="width:
+        2rem; height: 3rem">
+    </div>
+</a>
 
   <!-- =====================================End========================= -->
   <!-- =========================================SEction 1=========================== -->
@@ -80,7 +85,7 @@
           </button>
         </a>
       </div>
-      <a href="#section2">
+      <a href="#copyright">
         <div id="arrow1" class="arrow bg-light-blue show center">
           <img src="/image/10001.svg" alt="" style="max-width: 4rem; max-height:4rem ;" />
         </div>
@@ -146,7 +151,8 @@
     </div>
     <div class="grid section-3-inner-2">
       <div class=" play">
-        <a href="thesesame.tech" target="_blank"><i class="uil bg-black-1 text-white bold-600 fs-300 uil-play"></i></a>
+        <a id="play" href="https://www.thesesame.tech/" target="_blank"><i
+            class="uil bg-black-1 text-white bold-600 fs-300 uil-play"></i></a>
         <p class="fs-poppins">try it out?!</p>
       </div>
       <h3 class="fs-poppins bold-700 lineheight fs-300">
@@ -176,7 +182,7 @@
   </section>
   <!-- ==================4================= -->
 
-  <section id="section4" class="section-4 container bg-black-1">
+  <section id="section4" class="section-4 container ">
     <div>
       <h3 class="text-white fs-poppins fs-300">
         I'm pretty Good with ...
@@ -196,8 +202,13 @@
     </div>
   </section>
   <!-- ===========================================5================= -->
-  <section class="section-5 container bg-black-1 grid">
+  <section class="section-5 container  grid">
+    <video autoplay loop muted plays-inline class="bg-video">
+      <source src="/assets/particles.mp4" type="video/mp4">
+    </video>
+
     <div class="flex box-container">
+
       <p class="center bg-light-blue text-black fs-300 bold-700 fs-poppins">
         .Re
       </p>
@@ -246,11 +257,22 @@
     <div class="blog-post grid">
       <div class="flex">
         <img src="/assets/Instagram.gif" alt="" style="max-width:80px" />
-        <img src="/assets/flutter.png" alt="" style="max-width:30px" />
+        <img src="/assets/flutter.png" alt="" style="max-width:30px;margin-top: auto; margin-left:-11px;" />
       </div>
       <p class="fs-montserrat fs-100">Jan 4, 2023 | Flutter and Dart</p>
       <h3 class="fs-poppins fs-200 bold-900">
         Working on an instagram clone
+      </h3>
+
+    </div>
+    <div class="blog-post grid">
+      <div class="flex">
+        <img src="/assets/hinga.png" alt="" style="max-width:80px;" />
+        <img src="/assets/react.gif" alt="" style="max-width:30px;margin-top: auto;margin-left:-11px;" />
+      </div>
+      <p class="fs-montserrat fs-100">Jan 4, 2023 | ReactJs</p>
+      <h3 class="fs-poppins fs-200 bold-900">
+        In Development of software for the venture "Hingatech", implementing AI in Agriculture.
       </h3>
 
     </div>
@@ -278,10 +300,11 @@
         <p class="fs-montserrat fs-50">Kigali, Rwanda</p>
       </div>
       <div class="flex social">
-        <span><a href="https://www.facebook.com/avit.briann" target="_blank"><i
+        <span><a href="https://www.facebook.com/AvitBrianMugisha" target="_blank"><i
               class="uil uil-facebook-f"></i></a></i></span>
         <span><a href="https://twitter.com/AvitMugisha" target="_blank"><i class="uil uil-twitter"></i></a></span>
-        <span><a href="https://twitter.com/AvitMugisha" target="_blank"><i class="uil uil-linkedin"></i></a></span>
+        <span><a href="https://www.linkedin.com/in/avitbrian/" target="_blank"><i
+              class="uil uil-linkedin"></i></a></span>
         <span><a href="https://www.instagram.com/leu_demon/" target="_blank"><i
               class="uil uil-instagram-alt"></i></a></span>
       </div>
@@ -353,13 +376,16 @@
   </footer>
 
   <section class="copy-right grid">
-    <div>
+    <div id="copyright">
       <p class="fs-montserrat text-white">
         © 2023 Avit Brian
       </p>
     </div>
 
   </section>
+    <script src="home.js" defer></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
 </body>
 
 </html>
