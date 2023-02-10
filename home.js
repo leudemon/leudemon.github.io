@@ -97,3 +97,9 @@ const sliderStart = function () {
 };
 
 sliderStart();
+
+
+
+$('#go').click(function (event) {
+  window.location.href = 'https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcRzDDJBDtlNcHPNHSPtsffwndpvdJBmjDBDGjcsGSphvWQptpRLVtqFJPHlzWmJzqqdVBMJC';
+})

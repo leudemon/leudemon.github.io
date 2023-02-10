@@ -83,7 +83,7 @@ body {
 /* A element that don't have a class get default style=== */
 
 a:not([class]) {
-  text-decoration-skip-ink: auto;
+  text-decoration: none;
 }
 
 /* make image easier to work with=========== */
@@ -106,31 +106,6 @@ select {
 ::-webkit-scrollbar {
   display: none;
 }
-
-/* Remove all animation, transition & smooth scroll for people that prefer
- not  to see them  */
-
-@media (prefers-reduced-motion: reduce) {
-  html:focus-within {
-    scroll-behavior: auto;
-  }
-
-  *,
-  *::after,
-  *::before {
-    animation-duration: 0.01ms !important;
-    animation-iteration-count: 1 !important;
-    transition-duration: 0.01s !important;
-    scroll-behavior: auto !important;
-  }
-}
-
-/* ===================End Of Gernal Reset================= */
-
-/* ====================================== */
-
-/* Some Important Utility Class */
-/* ====================================== */
 
 /* /////////////Background-Color Utility Class */
 
@@ -160,7 +135,7 @@ select {
 .bg-black-3 {
   background-color: hsl(var(--clr-baclk-3));
 }
-.bg-transparent{
+.bg-transparent {
   background-color: transparent;
 }
 /* ======TEXT==color================= */
@@ -339,7 +314,7 @@ select {
     /* display: none; */
     position: absolute;
     background-color: transparent;
-    inset: 100% 25% 50% 25%;
+    inset: 100% 25% 0% 25%;
     color: hsl(var(--clr-baclk-1) / 0.8);
     border-radius: 10px;
     --flex-gap: 1.5rem;
@@ -347,7 +322,7 @@ select {
     justify-content: center;
     padding: 3rem;
   }
-  #arrow1{
+  #arrow1 {
     margin-top: 10em;
   }
 
@@ -394,10 +369,10 @@ select {
     position: absolute;
     flex-direction: column;
     background-color: hsl(var(--clr-dark-blue));
-    inset: 30% 90% 30% 0%;
+    inset: 70% 100% -5% 0%;
     color: hsl(var(--clr-baclk-1) / 0.8);
-    border-radius: 10px;
-    --flex-gap: 1.5rem;
+    border-radius: 0px;
+    --flex-gap: 2rem;
     align-items: center;
     justify-content: center;
   }
@@ -494,11 +469,13 @@ select {
     font-size: var(--fs-bf-109);
     padding: 1rem;
     top: -9rem;
+    
   }
   .inner-section-1-img {
     margin-top: 2rem;
     width: 60%;
     margin-bottom: 3rem;
+    margin: auto;
   }
 }
 @media (max-width: 35em) {
@@ -558,6 +535,7 @@ select {
     "two"
     "three"
     "four";
+    margin: auto;
 }
 
 .section-2:nth-child(1) {
@@ -1146,4 +1124,48 @@ select {
 
 .hidden {
   display: none;
+}
+
+#hero {
+  animation: zooms 10s ease-in-out 1s infinite alternate;
+  transition: all 3s;
+}
+
+#hero:hover {
+  transform: scale(1.2);
+}
+#arrow1 > img {
+  margin-top: 15%;
+  width: 20em;
+  animation: hovers 3s ease-in-out 10s infinite alternate;
+}
+@keyframes zooms {
+  from {
+    transform: scaleY(1);
+  }
+  to {
+    transform: scale(1.1);
+  }
+}
+@keyframes hovers {
+  0% {
+    transform: translateY(-70%);
+  }
+  30% {
+    transform: translateY(0%);
+  }
+  50% {
+    transform: translateY(-200%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
+
+li:hover {
+  transform: scale(1.2);
+  transition: all ease-in-out 0.5s;
+}
+a {
+  color: black;
 }

@@ -16,7 +16,7 @@
 
   <link rel="stylesheet" href="home.css" />
   <script src="home.js" defer></script>
-  <!-- custon style Sheet & JavaScript -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
   <title>Avit Brian</title>
 </head>
 
@@ -35,17 +35,18 @@
     <div>
       <ul class="primary-navigation flex">
         <li>
-          <a class="fs-poppins text-black-3 bold-700" href="#">Home</a>
-          <span data-tooltip="Home"><i class="uil uil-estate"></i></span>
+          <a class="fs-poppins text-black-3 bold-700" href="#section4">
+            Stacks
+          </a>
+          
+          
         </li>
 
         <li>
-          <a class="fs-poppins text-black-3 bold-700" href="#">Projects</a>
-          <span data-tooltip="About"><i class="uil uil-user"></i></span>
+          <a class="fs-poppins text-black-3 bold-700" href="#section3">projects</a>
         </li>
         <li>
-          <a class="fs-poppins text-black-3 bold-700" href="#">Contact</a>
-          <span data-tooltip="Email"><i class="uil uil-envelope-minus"></i></span>
+          <a class="fs-poppins text-black-3 bold-700" href="#contact">Contact</a>
         </li>
       </ul>
     </div>
@@ -53,9 +54,9 @@
 
   <!-- =====================================End========================= -->
   <!-- =========================================SEction 1=========================== -->
-  <section class="section-1 bg-white grid ">
+  <section id="section1" class="section-1 bg-white grid ">
     <div class="inner-section-1-img">
-      <img src="/image/Pp.png" alt="me" />
+      <img id="hero" src="/image/Pp.png" alt="me" />
     </div>
     <div>
       <div>
@@ -73,16 +74,23 @@
             LinkedIn <span><img src="/assets/linkedin.gif" alt="github" /></span>
           </button>
         </a>
+        <a href="https://drive.google.com/u/0/uc?id=1p2Y9ZnNjQpnTmOpuvlnu9Dnp7P4zLtAr&export=download" target="_blank">
+          <button class="large-btn bg-white fs-poppins text-black-1 center">
+            My CV<span><img src="/assets/download.gif" alt="github" /></span>
+          </button>
+        </a>
       </div>
-      <div id="arrow1" class="arrow bg-light-blue show center">
-        <img src="/image/10001.svg" alt="" style="max-width: 4rem; max-height:4rem ;" />
-      </div>
+      <a href="#section2">
+        <div id="arrow1" class="arrow bg-light-blue show center">
+          <img src="/image/10001.svg" alt="" style="max-width: 4rem; max-height:4rem ;" />
+        </div>
+      </a>
     </div>
   </section>
 
   <!-- ============================Section 2=-================================= -->
 
-  <section class="section-2 container  grid center">
+  <section id="section2" class="section-2 container  grid center">
 
     <div class="box-container">
       <h3 class="fs-poppins bold-500 lineheight text-black-1">
@@ -127,7 +135,7 @@
   </section>
 
   <!-- =========================Section 3============================== -->
-  <section class="section-3 container grid">
+  <section id="section3" class="section-3 container grid">
     <div class="section-3-inner">
       <div class="img-2">
         <img src="/assets/Rock-Paper-Scissors.gif" alt="" style="min-width: 400px" />
@@ -138,8 +146,7 @@
     </div>
     <div class="grid section-3-inner-2">
       <div class=" play">
-        <a href="avit.netlify.app" target="_blank"><i
-            class="uil bg-black-1 text-white bold-600 fs-300 uil-play"></i></a>
+        <a href="thesesame.tech" target="_blank"><i class="uil bg-black-1 text-white bold-600 fs-300 uil-play"></i></a>
         <p class="fs-poppins">try it out?!</p>
       </div>
       <h3 class="fs-poppins bold-700 lineheight fs-300">
@@ -158,9 +165,9 @@
         Have a look at the source code...
       </p>
       <div class="text-aline flex">
-        <a href="https://github.com/leudemon/Rock_paper_scissors" target="_blank">
+        <a href="https://github.com/AvitBrian?tab=repositories" target="_blank">
           <button class="large-btn bg-white fs-poppins clr-git flex">
-            <span><img src="/assets/github(1).gif" alt="Source code" /></span>
+            <span>Find more here<img src="/assets/github(1).gif" alt="Source code" /></span>
           </button>
         </a>
 
@@ -169,7 +176,7 @@
   </section>
   <!-- ==================4================= -->
 
-  <section class="section-4 container bg-black-1">
+  <section id="section4" class="section-4 container bg-black-1">
     <div>
       <h3 class="text-white fs-poppins fs-300">
         I'm pretty Good with ...
@@ -260,7 +267,7 @@
 
   <!-- ==============================9================================ -->
 
-  <section class="center container grid">
+  <section id="contact" class="center container grid">
     <div class="grid team">
       <div class="
         bg-white">
@@ -271,10 +278,12 @@
         <p class="fs-montserrat fs-50">Kigali, Rwanda</p>
       </div>
       <div class="flex social">
-        <span><i class="uil uil-facebook-f"></i></span>
-        <span><i class="uil uil-twitter"></i></span>
-        <span><i class="uil uil-linkedin"></i></span>
-        <span><i class="uil uil-instagram-alt"></i></span>
+        <span><a href="https://www.facebook.com/avit.briann" target="_blank"><i
+              class="uil uil-facebook-f"></i></a></i></span>
+        <span><a href="https://twitter.com/AvitMugisha" target="_blank"><i class="uil uil-twitter"></i></a></span>
+        <span><a href="https://twitter.com/AvitMugisha" target="_blank"><i class="uil uil-linkedin"></i></a></span>
+        <span><a href="https://www.instagram.com/leu_demon/" target="_blank"><i
+              class="uil uil-instagram-alt"></i></a></span>
       </div>
     </div>
 
@@ -332,9 +341,10 @@
         </h3>
       </div>
       <div>
-        <button class="fs-poppins bg-light-blue fs-200 bold-700 text-white">
+        <button id="go" class="fs-poppins bg-light-blue fs-200 bold-700 text-white">
           Hire Me
         </button>
+
       </div>
     </div>
 
@@ -343,12 +353,6 @@
   </footer>
 
   <section class="copy-right grid">
-    <div class="flex footer-icon">
-      <span><i class="uil text-white uil-facebook-f" style="width: 1rem"></i></span>
-      <span><i class="uil text-white uil-twitter"></i></span>
-      <span><i class="uil text-white uil-linkedin"></i></span>
-      <span><i class="uil text-white uil-instagram-alt"></i></span>
-    </div>
     <div>
       <p class="fs-montserrat text-white">
         © 2023 Avit Brian
