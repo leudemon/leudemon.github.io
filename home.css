@@ -59,6 +59,7 @@ blockquote,
 dl,
 dd {
   margin: 0;
+  padding: 0;
 }
 
 /* Removing list style============== */
@@ -77,7 +78,6 @@ html {
   scroll-behavior: smooth;
   width: 100%;
   overflow-x: hidden;
-
 }
 
 /* set core body default================ */
@@ -273,6 +273,7 @@ select {
 
 .container {
   width: 100%;
+  min-height: fit-content;
   margin-inline: auto;
 }
 
@@ -362,7 +363,7 @@ select {
     content: "";
     position: sticky;
     width: 1rem;
-    height: 1rem;
+    min-height: 1rem;
     aspect-ratio: 1;
     background-color: hsl(var(--clr-dark-blue));
     top: -1.5rem;
@@ -413,7 +414,7 @@ select {
     left: 2rem;
     position: absolute;
     width: 1rem;
-    height: 1rem;
+    min-height: 1rem;
     aspect-ratio: 1;
     background-color: hsl(var(--clr-dark-blue));
     top: 0.5rem;
@@ -422,9 +423,7 @@ select {
 }
 
 /* ======================section 1============================= */
-.youtube {
-  color: hsl(var(--clr-white) / 0.8);
-}
+
 .lineheight {
   line-height: 3.5rem;
 }
@@ -584,7 +583,7 @@ select {
 
 .box-container {
   min-width: auto;
-  min-height: 300px;
+  min-height: fit-content;
 }
 /* ==============Tab==================== */
 @media (min-width: 35em) and (max-width: 59em) {
@@ -775,7 +774,7 @@ select {
 .section-5::before {
   content: "";
   width: 90%;
-  height: 1px;
+  min-height: 1px;
   background-color: hsl(var(--clr-white) / 0.3);
   position: absolute;
   right: 1.5rem;
@@ -783,7 +782,6 @@ select {
 
 @media (min-width: 35em) and (max-width: 59em) {
   .section-5 {
-    padding-left: 4rem;
     grid-template-areas:
       "one two"
       "three four";
@@ -792,13 +790,10 @@ select {
 
 @media (min-width: 59em) {
   .section-5 {
-    padding-inline: 5rem;
+    padding-inline: 1rem;
     padding-block: 8rem;
     grid-template-areas: "one two three four";
-    
-    
   }
-  
 }
 /* ================6==================== */
 .news {
@@ -811,7 +806,8 @@ select {
 .blog {
   gap: 3rem;
   margin-block: 4rem;
-  height: 50vh;
+  min-height: 50%;
+  width: fit-content;
 }
 .blog-post {
   position: relative;
@@ -845,7 +841,12 @@ select {
 
 @media (min-width: 35em) and (max-width: 59em) {
   .blog {
-    padding-left: 4rem;
+    /* padding-left: 4rem; */
+    display: block;
+    width: 100vw;
+    padding: 1rem;
+    margin: auto;
+    min-height: fit-content;
     grid-template-areas:
       "one two"
       "three four";
@@ -861,9 +862,11 @@ select {
 
 @media (min-width: 59em) {
   .blog {
-    padding-inline: 5rem;
+    min-height: fit-content;
     padding-block: 3rem;
     margin-bottom: 5rem;
+    padding: 0;
+    margin: auto;
     grid-template-areas:
       "one two three "
       "four five six";
@@ -882,54 +885,11 @@ select {
     "four";
 }
 
-.our-team:nth-child(1) {
-  grid-area: one;
-}
-.our-team:nth-child(2) {
-  grid-area: two;
-}
-.our-team:nth-child(3) {
-  grid-area: three;
-}
-.our-team:nth-child(4) {
-  grid-area: four;
-}
-
-.team {
-  text-align: center;
-  margin-block: 3rem;
-}
-.team img {
-  margin-top: -5rem;
-  margin-left: 2rem;
-}
-
 .social {
   justify-content: center;
   align-items: center;
 }
 
-@media (min-width: 35em) and (max-width: 59em) {
-  .our-team {
-    grid-template-areas:
-      "one two"
-      "three four";
-  }
-  .team img {
-    margin-top: -5rem;
-    width: 85%;
-  }
-}
-
-@media (min-width: 59em) {
-  .our-team {
-    grid-template-areas: "one two three four";
-  }
-  .team img {
-    margin-top: -5rem;
-    width: 90%;
-  }
-}
 /* ===================Selide Section==================== */
 .active {
   background-color: hsl(var(--clr-baclk-1) / 0.5);
@@ -1203,6 +1163,7 @@ a {
   right: 0;
   bottom: 0;
   z-index: -1;
+  width: 100%;
 }
 
 @media (min-aspect-ratio: 16/9) {
@@ -1214,7 +1175,7 @@ a {
 
 @media (max-aspect-ratio: 16/9) {
   .bg-video {
-    width: auto;
+    width:auto;
     height: 100%;
   }
 }
