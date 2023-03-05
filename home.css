@@ -42,6 +42,8 @@
 *::after,
 *::before {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 /* // Removing defualt margin========= */
@@ -73,6 +75,9 @@ html:focus-within {
 }
 html {
   scroll-behavior: smooth;
+  width: 100%;
+  overflow-x: hidden;
+
 }
 
 /* set core body default================ */
@@ -267,9 +272,9 @@ select {
 }
 
 .container {
-  width: 95vw;
+  width: 100%;
   margin-inline: auto;
-  padding-inline: 2rem;
+  padding-inline: 1rem;
 }
 
 /* ===============End of Utility  Class=============== */
@@ -700,10 +705,11 @@ select {
 .section-4 {
   margin-top: 3rem;
   padding-block: 4rem;
+  width: 100%;
 }
 .feature {
   flex-direction: column;
-  width: 75%;
+  width: 100%;
 }
 
 @media (min-width: 35em) and (max-width: 59em) {
